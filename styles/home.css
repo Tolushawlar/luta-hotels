@@ -1,0 +1,301 @@
+* {
+  font-family: Lato;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #00aeff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .links {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* jumbotron styles */
+.jumbo {
+  background-image: url("../asset/shane-hauser-Kut4fuXuTO4-unsplash.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbo .overlay {
+  width: 60vw;
+  background-color: white;
+  height: 15vh;
+  position: relative;
+  top: 200px;
+  box-shadow: 0 0 10px 1px #555;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jumbo .overlay form {
+  width: 100vw;
+}
+
+.jumbo .overlay input {
+  width: 20vw;
+}
+
+.jumbo .overlay .btn {
+  background-color: #00aeff;
+  border-radius: 3px;
+  height: 39px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in;
+  width: 100%;
+}
+
+/* Hotel List styles */
+
+.hotel-list {
+  position: relative;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotel-list hr {
+  width: 40px;
+  height: 2px;
+  background-color: #00aeff;
+}
+
+.hotel-list .states-box {
+  display: flex;
+  width: 900px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hotel-list .states-box .sbox {
+  width: 120px;
+  text-align: center;
+  border: 2px solid #00aeff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.top-deals {
+  position: relative;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-deals hr {
+  width: 40px;
+  height: 2px;
+  background-color: #00aeff;
+}
+
+.top-deals .deals-list {
+  width: 60vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-deals .deals-box {
+  border: grey solid 1.3px;
+}
+
+.top-deals .deals-list .deals-box img {
+  width: 300px;
+  height: 250px;
+}
+
+.cities {
+  position: relative;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cities hr {
+  width: 40px;
+  height: 2px;
+  background-color: #00aeff;
+}
+
+.cities .cities-list {
+  margin-top: 30px;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cities .cities-list .city {
+  background-image: url("../asset/shane-hauser-Kut4fuXuTO4-unsplash.jpg");
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-city {
+  position: relative;
+  top: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-city hr {
+  width: 40px;
+  height: 2px;
+  background-color: #00aeff;
+}
+
+.book-city .cities-book {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 65vw;
+  margin-top: 25px;
+}
+
+.book-city .bcity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 190px;
+}
+
+.special-deals {
+  position: relative;
+  top: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 60px;
+}
+
+.special-deals button {
+  margin-top: 20px;
+}
+
+.featured {
+  position: relative;
+  top: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured hr {
+  width: 40px;
+  height: 2px;
+  background-color: #00aeff;
+}
+
+.featured .press-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 50vw;
+}
+
+.featured ul li {
+  list-style: none;
+}
+
+.featured .bookings-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.apps {
+  position: relative;
+  top: 750px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff8fb;
+  padding: 30px;
+}
+
+.subscribe {
+  background-color: #084482;
+  position: relative;
+  top: 720px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer {
+  position: relative;
+  top: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+
+.footer .footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60vw;
+}
+
+.footer .footer-links .titles{
+  margin-bottom: 60px;
+}

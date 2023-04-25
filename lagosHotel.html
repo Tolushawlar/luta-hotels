@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotels.ng: Book the best Hotels in Nigeria</title>
+    <link
+      rel="shortcut icon"
+      href="https://static.hotels.ng/v7/img/favicons/hotels.ng/favicon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles/lagosHotel.css" rel="stylesheet" />
+    <link href="styles/home.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header class="header">
+      <section class="header-container">
+        <div class="header-navbar">
+          <div class="header-logo">
+            <a href="#"><img src="./assets/images/logo1.png" alt="" /></a>
+          </div>
+          <nav class="header-navs-container">
+            <ul class="header-ul">
+              <li class="header-navs whatsapp-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Layer_1"
+                  x="0px"
+                  y="0px"
+                  width="25px"
+                  height="40px"
+                  viewBox="0 0 23 23"
+                  enable-background="new 0 0 23 23"
+                  xml:space="preserve"
+                >
+                  <image
+                    id="image0"
+                    width="23"
+                    height="23"
+                    x="0"
+                    y="0"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADAFBMVEUAAADX19fd3d3i4uLj 4+Pe3t7b29vU1NTb29vk5eTy7/Lk5OTZ2dnV1tXf4N/g4eDW1tbT09Pk5eTp6Ong4ODk5OTo6Ojc 3dzg4ODV1dXZ2dnh4eHl5uXY2Njx7vDd3d3a2trb29vj4+PY2Nje3t7f39/u6+3x7fDT09Pf4N/i 4uLW19bi4uLb3Nvd3d3h4eHZ2dng3+DV1dXg4ODv7e/e3t7a2trn5+ff39/b29va2tre397p6Onf 4N/T09Pd3t3b29vb29vZ2dnb29vW1tb/+////////f/18fT29Pby/fPV89nM8NDW9Nrv+/D7+PvN 8NGC24tb0mdLzllFy1NZ0WZ72YTF7cqN3pY7yUtS0F9U0GFNzlo/yk05yEh82ob3/Pd114EuxT40 x0RSz2BTz2BPzl0yxkJl0nKQ3pkowzlByVCR35pPzV1PzV5PzF1+2YjV8tkzw0Qvw0CH3JBj0XA5 xUlNy1tKy1gvwkDB7MaB2IsowDo7xEvX8tq868FIyFdJyVhLyVlu1Hr28fX/+P/5/vlUy2I1wkY4 wkg0wkRExlRGxlVGx1U8xE3q+uz//v/f9eI+w1A7wksovDud4KX1/PZLx1swv0JDxVRDxFNCxFM0 wEbQ8dQzv0U8wk3u+e+K25UYty06wUspvD04wUpAw1E+wk8rvj7D7cff9uE/wVEfuDNhzW4Ytiwc tzJu0no5wEsguDU8wU0tvEDN7tH89fz8//w6v0wXtS181Ymo4685v0uh4anc89921IExvUQquT// +v8Usys3vkszvUdy0n/9//wPsCdsz3ra8t0wu0U1vUkxu0YTsSpCwlWr5LOE15AVsi0VsS0uuUQy u0ccszN304SF2ZBfym4Xsi8Bqxt/1ov08PP6/vtCwVUOricUry0gtDguuUMsuEEfszcKrCNlzHP/ /P+v5bcApxMuuENXyGgEqh4dsTUdsTQDqB3A6cae36fd9eCB1I1EwFcltTt80ojU8djv8O/l9+fn +Ony8vLx8fH38fb48vdEB2naAAAARXRSTlMAO3qmsIFIBkez9r5WCKS6FhrT5SrY76LENFOuzw7y imlus2M8CvD7OZW4KTigjM8BxBEe+46A0JtQNYnXkCdjeSxMXC+ILkrgAAAAAWJLR0RGF7r57QAA AAd0SU1FB+QJCA4AAIM7lKAAAAHuSURBVCjPY2CAAkYmZhZmVjZ2BhTAwcnl6ubm5u7BzYMkysvn 6ebm5e3j6+fm5s8vABMWFHJzCwgMCg4JDg0Ld3MTFoGqFnVzi4iMDI6KjoqJjYtPcBOD6BB3c0tM So5MiU5NTUlNS89IcJMACUt6umVmZedkhuTm5eXm5+YlFbj5SwHFpd0Ki4pL3NxKy8rBoKKyyk2G l0FWzq26prbOza2+qKERBJoqm91a2Bg4WtvaOzoL3dzCu7p7ent7enr6evrd5RkUJkycNHnKVLdp 02fMBIJZs2dPmhPgJs2g6DZ3zuR58xe4LVw0f+biJUtnL1u+YqWbEoOy+6qlc1avWevmVr1u/eIN Gzdt3rhlqxszg8q27dOXbN6xc5eb2+49e9327T9wcLXfIVYGVTW3XYePHDm689h2NxA4vuXESTd1 DQYGTfdTpw+eOXP23PkLIJmLl3ZuddMC+kvbw+3k5dNXTl+9dm719Rs3b92+43ZXBxQh2+7df/Dw 0ZXHV548fXDi2e3nbi90QeGj5/by1es3V94+fPf0/cMPty66uekbgMRlJnz8tMDt85evT769/vr9 h5uroRFI2Pgn0LJWDyDxq+43kDQxhcSK2Z+/5haWVtY2/1pftP63sbWDRqK9gzaYNnB0cpZyMYDF LQAPls0FjcC7KQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wOS0wOFQxNDowMDowMCswMDowMPx6 74AAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDktMDhUMTQ6MDA6MDArMDA6MDCNJ1c8AAAAAElF TkSuQmCC"
+                  ></image>
+                </svg>
+              </li>
+
+              <li class="header-navs booking-nav">
+                <span class="booking-nav-container">
+                  <span class="booking-details-container">
+                    <img src="./assets/images/navbar-contact-min.jpg" alt="" />
+                    <span class="booking-details-text">
+                      <p class="booking-text">
+                        You can call us to book your hotel
+                      </p>
+                      <p class="booking-contact">+234 700 880 8800</p>
+                    </span>
+                  </span>
+                </span>
+              </li>
+
+              <li class="header-navs flag-icon">
+                <a href=""
+                  ><svg
+                    width="30"
+                    height="40"
+                    viewBox="0 0 62 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d)">
+                      <rect x="22" width="18" height="48" fill="white" />
+                      <rect x="4" width="18" height="48" fill="#003B00" />
+                      <rect x="4" width="18" height="48" fill="#003B00" />
+                      <rect x="40" width="18" height="48" fill="#003B00" />
+                      <rect x="40" width="18" height="48" fill="#003B00" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d"
+                        x="0"
+                        y="0"
+                        width="62"
+                        height="56"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </a>
+                <p>₦</p>
+              </li>
+
+              <li class="header-navs account-icon">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <p>Account</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <div style="margin-left: 50px" class="top-link">
+      <p>Home</p>
+      <p style="margin-left: 50px">Lagos 3,420 (hotels)</p>
+    </div>
+    <hr style="width: 100%" />
+
+    <div class="overlay">
+      <form action="POST">
+        <span>
+          <i
+            class="fa fa-search"
+            style="position: relative; left: 30px; opacity: 2px !important"
+          ></i>
+          <input
+            style="
+              width: 500px;
+              padding: 15px;
+              background-color: white;
+              border: 1px solid grey;
+              border-radius: 3px;
+            "
+            type="text"
+            placeholder="       Search for a  hotel"
+          />
+        </span>
+
+        <span>
+          <i
+            class="fa fa-calendar-alt"
+            style="position: relative; left: 30px"
+          ></i>
+          <input
+            style="
+              width: 500px;
+              padding: 15px;
+              background-color: white;
+              border: 1px solid grey;
+              border-radius: 3px;
+            "
+            type="text"
+            placeholder="       Search for a city or a particular hotel"
+          />
+        </span>
+
+        <span class="btn"> Find Hotels </span>
+      </form>
+
+      <hr style="width: 100%" />
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="sidebar">
+        <div class="subscribe">
+          <h4 style="margin-bottom: 15px">
+            Stay updated with our lastest rates
+          </h4>
+          <div class="form">
+            <input type="text" placeholder="enter you email address" />
+            <button type="submit" value="submit">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="lets">Shortlet Apartments in Lagos</div>
+
+        <div class="filters">
+          <span><i class="fa fa-"></i></span><h4>Search Filters</h4>
+          <hr />
+          <p style="font-weight: 500">What is your budget per night?</p>
+          <div class="text">
+            <p>From ₦0</p>
+            <p>To ₦40,000+</p>
+          </div>
+          <div class="slidecontainer">
+            <div class="top"></div>
+            <div class="middle">
+              <hr />
+            </div>
+            <div class="bottom"></div>
+          </div>
+          <button>Refine Search</button>
+
+          <hr style="margin-top: 40px !important" />
+
+          <h4 class="proptype">Property type</h4>
+          <form action="POST">
+            <div class="in1">
+              <input type="Checkbox" /><span style="margin-left: 5px"
+                >Hotels</span
+              >
+            </div>
+            <div class="in2" style="margin-top: 10px">
+              <input type="Checkbox" /><span style="margin-left: 5px"
+                >Shortlet Apartment</span
+              >
+            </div>
+          </form>
+
+          <hr style="margin-top: 40px !important" />
+
+          <div class="prices">
+            <div class="price">
+              <input type="Checkbox" />
+              <span>₦0 - ₦5,000 per night</span>
+            </div>
+            <div class="price">
+              <input type="Checkbox" />
+              <span>₦5,000 - ₦11,000 per night</span>
+            </div>
+            <div class="price">
+              <input type="Checkbox" />
+              <span>₦11,030 - ₦20,000 per night</span>
+            </div>
+            <div class="price">
+              <input type="Checkbox" />
+              <span>₦20,000 - ₦40,000 per night</span>
+            </div>
+            <div class="price">
+              <input type="Checkbox" />
+              <span>₦40,000+ per night</span>
+            </div>
+          </div>
+
+          <hr style="margin-top: 40px !important" />
+
+          <div class="amentin">
+            <h4 class="top-text">Only Show hotels with amenities</h4>
+            <div class="amne">
+              <div class="box">
+                <i class="fa fa-cocktail fa-2x" style="padding: 3px"></i>
+              </div>
+              <span class="text">Bar and Lounge</span>
+            </div>
+            <div class="amne">
+              <div class="box">
+                <i class="fa fa-swimming-pool fa-2x" style="padding: 3px"></i>
+              </div>
+              <span class="text">Swimming Pool</span>
+            </div>
+            <div class="amne">
+              <div class="box">
+                <i class="fa fa-bowl-food fa-2x" style="padding: 3px"></i>
+              </div>
+              <span class="text">Restaurant(s)</span>
+            </div>
+            <div class="amne">
+              <div class="box">
+                <i class="fa fa-wifi-3 fa-2x" style="padding: 1px"></i>
+              </div>
+              <span class="text">Wireless Internet</span>
+            </div>
+            <div class="amne">
+              <div class="box">
+                <i class="fa fa-sport fa-2x" style="padding: 2px"></i>
+              </div>
+              <span class="text">Gym</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="selected-areas">
+          <h4 style="margin-left: 20px; margin-top: 20px">
+            <span
+              style="
+                color: #00aeff;
+                border: solid #00aeff 2px;
+                height: 10px !important;
+                width: 30px !important;
+                margin-right: 3px;
+              "
+              >+</span
+            >
+            Selected Areas in Lagos
+          </h4>
+
+          <hr style="margin-top: 20px !important" />
+
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ikeja</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 100px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Lekki</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 100px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Victorial Island</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 170px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ikoyi</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 100px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ikorodu</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 120px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Surelere</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 128px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Lekki Phase 1</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 160px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Badagry</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 120px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ikotun</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ojo</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ajah</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Apapa</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Alimosho</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Yaba</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Ajao Estate</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <div class="area" style="margin-top: 30px">
+            <input type="Checkbox" /><span
+              style="margin-left: 5px; font-weight: 500"
+              >Hotels in Festac</span
+            ><br />
+            <span
+              style="
+                position: relative;
+                top: 15px;
+                right: 108px;
+                font-weight: 200;
+              "
+              >232 hotels</span
+            >
+          </div>
+          <button>View more cities</button>
+        </div>
+      </div>
+
+      <div class="list-cards">
+        <h1 style="margin-bottom: 30px; color: #00aeff">
+          3,201 Hotels in Lagos
+        </h1>
+        <h3 style="margin-bottom: 20px">
+          Select & book from 3,420 Hotels near Lagos
+        </h3>
+        <p style="margin-top: 10px">
+          Book a great hotel in Lagos. Hotels.ng has luxury hotels, cheap
+          hotels, lodges, airbnbs in Lagos, short-let <br />apartments and more.
+          All at the best rates that are only available online!
+        </p>
+        <div class="listed-location">
+          <p style="color: black">Only show hotels in area</p>
+          <p>Ikeja</p>
+          <p>Lekki</p>
+          <p>Victoria Island</p>
+          <p>Ikoyi</p>
+          <button>Choose another location</button>
+        </div>
+        <div class="top-tabs">
+          <button
+            id="first"
+            style="
+              background-color: #00aeff !important;
+              color: white !important;
+            "
+          >
+            Our Top Picks
+          </button>
+          <button><i style="margin-right:10px !important;" class="fa fa-gift"></i>Luxury Hotels</button>
+          <button><i style="margin-right:10px !important;" class="fa fa-city"></i> Hotels</button>
+          <button><i style="margin-right:10px !important;" class="fa fa-hotel"></i>Best Hotels</button>
+          <button><i style="margin-right:10px !important;" class="fa fa-thumbs-up"></i> Popular</button>
+        </div>
+        <div class="button-tabs">
+          <p>Only show</p>
+          <button>Cheap Hotels In Ikeja</button>
+          <button>Cheap Hotels In Lekki</button>
+          <button>Cheap Hotels In Victoria Island</button>
+          <button>Cheap Hotels In Ikoyi</button>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-img">
+              <img src="asset/jumbo.jpg" />
+            </div>
+            <div class="card-text">
+              <span class="left">
+                <div class="top">
+                  <h3><a href="rooms.html">The Avenue Suites</a></h3>
+                  <p>
+                    <span style="color: #00aeff">Victoria Island, Lagos </span> - 1390 Tiamiyu Savage Street, Off<br />
+                    Ahmadu Bello Way
+                  </p>
+                </div>
+                <div class="middle">
+                  <blockquote>
+                    <i
+                      >Amazing center location , amazing food and service, very
+                      affordable price for 4 stars hote... - Axeslb</i
+                    >
+                  </blockquote>
+                </div>
+                <div class="bottom" style="margin-top: 60px">
+                  <i class="fa fa-utensil-spoon"></i>
+                  <i class="fa fa-wifi"></i>
+                </div>
+              </span>
+              <span class="right">
+                <p id="price-range">₦55,000</p>
+                <div class="listing-hotels-rating-box">
+                  <p class="listing-hotels-rating">
+                    <span class="bkgrnd-excellent">9.8 Excellent</span><br />
+                  </p>
+                </div>
+                <p style="font-size: 13px">from 3 reviews</p>
+                <button>Book Now</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/dmatel-hotel-and-resorts-rivers.jpg" />
+            </div>
+            <div class="card-text">
+              <span class="left">
+                <div class="top">
+                  <h3>Casa Del Amor - VI</h3>
+                  <p>
+                    <span style="color: #00aeff">Victoria Island, Lagos </span> - Oniru, Victoria Island
+                  </p>
+                </div>
+                <div class="middle">
+                  <blockquote>
+                    <i
+                      >Amazing center location , amazing food and service, very
+                      affordable.</i
+                    >
+                  </blockquote>
+                </div>
+                <div class="bottom" style="margin-top: 60px">
+                  <i class="fa fa-swimming-pool"></i>
+                </div>
+              </span>
+              <span class="right">
+                <p id="price-range">₦55,000</p>
+                <div class="listing-hotels-rating-box">
+                  <p class="listing-hotels-rating">
+                    <span class="bkgrnd-excellent">9.8 Excellent</span><br />
+                  </p>
+                </div>
+                <p style="font-size: 13px">from 3 reviews</p>
+                <button>Book Now</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/grand-ibro-hotel.jpg" />
+            </div>
+            <div class="card-text">
+              <span class="left">
+                <div class="top">
+                  <h3>Kitex Place</h3>
+                  <p>
+                    Victoria Island, Lagos - 1390 Tiamiyu Savage Street, Off<br />
+                    Ahmadu Bello Way
+                  </p>
+                </div>
+                <div class="middle">
+                  <blockquote>
+                    <i
+                      >Amazing center location , amazing food and service, very
+                      affordable price for 4 stars hote... - Axeslb</i
+                    >
+                  </blockquote>
+                </div>
+                <div class="bottom" style="margin-top: 60px">
+                  <i class="fa fa-utensil-spoon"></i>
+                  <i class="fa fa-network-wired"></i>
+                </div>
+              </span>
+              <span class="right">
+                <p id="price-range">₦55,000</p>
+                <div class="listing-hotels-rating-box">
+                  <p class="listing-hotels-rating">
+                    <span class="bkgrnd-excellent">9.8 Excellent</span><br />
+                  </p>
+                </div>
+                <p style="font-size: 13px">from 3 reviews</p>
+                <button>Book Now</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/imo-concorde-hotel.jpg" />
+            </div>
+            <div class="card-text">
+              <span class="left">
+                <div class="top">
+                  <h3>The Avenue Suites</h3>
+                  <p>
+                    Victoria Island, Lagos - 1390 Tiamiyu Savage Street, Off<br />
+                    Ahmadu Bello Way
+                  </p>
+                </div>
+                <div class="middle">
+                  <blockquote>
+                    <i
+                      >Amazing center location , amazing food and service, very
+                      affordable price for 4 stars hote... - Axeslb</i
+                    >
+                  </blockquote>
+                </div>
+                <div class="bottom" style="margin-top: 60px">
+                  <i class="fa fa-bars"></i>
+                  <i class="fa fa-wifi"></i>
+                </div>
+              </span>
+              <span class="right">
+                <p id="price-range">₦55,000</p>
+                <div class="listing-hotels-rating-box">
+                  <p class="listing-hotels-rating">
+                    <span class="bkgrnd-excellent">9.8 Excellent</span><br />
+                  </p>
+                </div>
+                <p style="font-size: 13px">from 3 reviews</p>
+                <button>Book Now</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/ibis.jpg" />
+            </div>
+            <div class="card-text">
+              <span class="left">
+                <div class="top">
+                  <h3>The Avenue Suites</h3>
+                  <p>
+                    Victoria Island, Lagos - 1390 Tiamiyu Savage Street, Off<br />
+                    Ahmadu Bello Way
+                  </p>
+                </div>
+                <div class="middle">
+                  <blockquote>
+                    <i
+                      >Amazing center location , amazing food and service, very
+                      affordable price for 4 stars hote... - Axeslb</i
+                    >
+                  </blockquote>
+                </div>
+                <div class="bottom" style="margin-top: 60px">
+                  <i class="fa fa-utensil-spoon"></i>
+                  <i class="fa fa-network-wired"></i>
+                </div>
+              </span>
+              <span class="right">
+                <p id="price-range">₦55,000</p>
+                <div class="listing-hotels-rating-box">
+                  <p class="listing-hotels-rating">
+                    <span class="bkgrnd-excellent">9.8 Excellent</span><br />
+                  </p>
+                </div>
+                <p style="font-size: 13px">from 3 reviews</p>
+                <button>Book Now</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="banner"><img src="asset/banner.png"</div>
+
+        <div class="offers">
+          <div class="left">
+            <div class="icon">
+              <i
+                class="fa fa-lock"
+                style="margin-top: 6px; color: orangered"
+              ></i>
+            </div>
+            <h5>
+              SPECIAL HOTEL DEALS AND OFFERS <br /><span
+                >recieve email when price drop in lagos</span
+              >
+            </h5>
+          </div>
+          <div class="right">
+            <form action="">
+              <input type="text" placeholder="Enter your email" />
+              <button type="submit" value="Unlock">Unlock</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="results">Showing results 1-10 of 3214</div>
+        <div class="pagination">
+          <div class="pagi btn">Previous</div>
+          <div class="pagi" id="pagi-1">1</div>
+          <div class="pagi">2</div>
+          <div class="pagi">3</div>
+          <div class="pagi">4</div>
+          <div class="pagi">5</div>
+          <div class="pagi">6</div>
+          <div class="pagi">7</div>
+          <div class="pagi">8</div>
+          <div class="pagi">9</div>
+          <div class="pagi btn">Next Page</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower">
+      <div class="left"></div>
+      <div class="middle">
+        <div class="listing-about">
+          <h2>About Lagos</h2>
+          <p>
+            Lagos State is Nigeria’s and Africa’s largest commercial hub. It is
+            home to over 15 million people, making it the largest city in
+            Africa. Being a metropolitan city, Lagos is always attracting
+            business-minded individuals, tourists and people from various walks
+            of life who come here for diverse reasons.<br />
+            <br />
+            There are so many luxury hotels and affordable hotels in Lagos to
+            choose from. Need a hotel in Lagos Island or a hotel in Lagos
+            Mainland? Be sure to go through the list of Lagos hotels on
+            hotels.ng to make your pick. <br />
+            <br />
+            Discount hotel rates are also available for you to choose from on
+            the site and you can view and compare hotel prices before making
+            your booking.
+          </p>
+          <p></p>
+        </div>
+
+        <hr style="width: 1300px" />
+
+        <div class="faq">
+          <h4>Frequently asked questions about Lagos</h4>
+          <div class="content">
+            <div class="left">
+              <h3>Ask a question</h3>
+              <p style="margin-bottom: 20px">
+                Typically responds within 24 hours
+              </p>
+              <form>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email Address" />
+                <input type="number" placeholder="Phone number (optional)" />
+                <textarea rows="8" cols="31">Message</textarea>
+                <button>Submit</button>
+              </form>
+            </div>
+            <div class="right">
+              <h4>Do you need to know anything about Lagos ?</h4>
+              <p>Be the first to ask a question</p>
+            </div>
+            <div class="spacing"></div>
+          </div>
+        </div>
+
+        <div class="listing-destinations">
+          <h2 class="" style="font-size: 22px">
+            Interesting places to visit in Nigeria
+          </h2>
+          <p>
+            Find the best price on hotels to our most popular destinations
+            across Nigeria.
+          </p>
+          <div class="dest">
+            <ul>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos">Lagos hotels</a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-abuja">Abuja hotels</a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-rivers/port-harcourt"
+                  >Port Harcourt hotels</a
+                >
+              </li>
+              <li><a href="https://hotels.ng/hotels-in-imo">Imo hotels</a></li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-crossriver/calabar"
+                  >Calabar hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-akwaibom"
+                  >Akwa Ibom hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-niger">Niger hotels</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://hotels.ng/hotels-in-oyo/ibadan"
+                  >Ibadan hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-imo/owerri"
+                  >Owerri hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-kano">Kano hotels</a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-edo/benin">Benin hotels</a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-akwaibom/uyo"
+                  >Uyo hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-kaduna">Kaduna hotels</a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-enugu">Enugu hotels</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/ikeja"
+                  >Ikeja hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/lekki"
+                  >Lekki hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-abuja/bwari"
+                  >Bwari hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-abuja/maitama"
+                  >Maitama hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/ikoyi"
+                  >Ikoyi hotels</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/resorts-in-lagos">Lagos resorts</a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/resorts-in-abuja">Abuja resorts</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/cheap"
+                  >Budget hotels in Lagos
+                </a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/cheap"
+                  >2 star hotels in Lagos
+                </a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/best"
+                  >3 star hotels in Lagos
+                </a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/luxury"
+                  >4 star hotels in Lagos
+                </a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/luxury"
+                  >5 star hotels in Lagos
+                </a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/luxury"
+                  >Business hotels in Lagos
+                </a>
+              </li>
+              <li>
+                <a href="https://hotels.ng/apartments-in-lagos"
+                  >Apartments in Lagos
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/with-swimming-pool"
+                  >Hotels in Lagos with swimming pool</a
+                >
+              </li>
+              <!-- <li><a href="https://hotels.ng/hotels-in-lagos/with-gym">Hotels in Lagos  with gym</a></li> -->
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/with-restaurants"
+                  >Hotels in Lagos with restaurant(s)</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/with-bar-and-lounge"
+                  >Hotels in Lagos with lounge</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/with-swimming-pool"
+                  >Hotels in Lagos with swimming pool</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/with-gym"
+                  >Hotels in Lagos with gym</a
+                >
+              </li>
+              <li>
+                <a href="https://hotels.ng/hotels-in-lagos/with-bar-and-lounge"
+                  >Hotels in Lagos with swimming pool</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="listing-city-info">
+          <h2 class="">Destinations in Lagos &amp; Nearby Places</h2>
+          <p class="top-areas-listing-p">
+            <a href="https://hotels.ng/hotels-in-lagos/ikeja">
+              Ikeja Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/lekki">
+              Lekki Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/victoria-island">
+              Victoria Island Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ikoyi">
+              Ikoyi Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ikorodu">
+              Ikorodu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/surulere">
+              Surulere Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/lekki-phase-1">
+              Lekki Phase 1 Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/badagry">
+              Badagry Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ikotun">
+              Ikotun Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ojo"> Ojo Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ajah"> Ajah Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/apapa">
+              Apapa Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/alimosho">
+              Alimosho Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/yaba"> Yaba Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ajao-estate">
+              Ajao Estate Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/festac">
+              Festac Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/festac">
+              Festac Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/agege">
+              Agege Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/oshodi-isolo">
+              Oshodi-Isolo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/victoria-garden-city">
+              Victoria Garden City Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ipaja">
+              Ipaja Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/amuwo-odofin">
+              Amuwo-Odofin Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/egbeda">
+              Egbeda Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/maryland">
+              Maryland Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/isolo">
+              Isolo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/magodo">
+              Magodo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ketu"> Ketu Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ogba"> Ogba Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ogba"> Ogba Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/mushin">
+              Mushin Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/epe"> Epe Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/abule-egba">
+              Abule Egba Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/lagos-island">
+              Lagos Island Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/igando">
+              Igando Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ejigbo">
+              Ejigbo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/alagbado">
+              Alagbado Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ebute-metta">
+              Ebute Metta Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/okota">
+              Okota Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/gbagada">
+              Gbagada Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ifako-ijaiye">
+              Ifako-Ijaiye Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/okokomaiko">
+              Okokomaiko Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ajegunle">
+              Ajegunle Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ikeja-gra">
+              Ikeja GRA Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/agbara">
+              Agbara Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/idimu">
+              Idimu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/oshodi">
+              Oshodi Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ijanikin">
+              Ijanikin Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/amuwo-odofin">
+              Amuwo Odofin Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ojota">
+              Ojota Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ojodu">
+              Ojodu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/lekki-phase-2">
+              Lekki phase 2 Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/iju-ishaga">
+              Iju Ishaga Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/iyana-ipaja">
+              Iyana-Ipaja Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/akowonjo">
+              Akowonjo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/isheri">
+              Isheri Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/bariga">
+              Bariga Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ibeju-lekki">
+              Ibeju-Lekki Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/satellite-town">
+              Satellite Town Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ilupeju">
+              Ilupeju Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/egbe"> Egbe Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/mafoluku">
+              Mafoluku Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/igbogbo">
+              Igbogbo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ijegun">
+              Ijegun Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ojokoro">
+              Ojokoro Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ogudu">
+              Ogudu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/orile">
+              Orile Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ajeromi-ifelodun">
+              Ajeromi-Ifelodun Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/imota">
+              Imota Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/sangotedo">
+              Sangotedo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/shomolu">
+              Shomolu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/oke-aro">
+              Oke-aro Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/anthony">
+              Anthony Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/somolu">
+              Somolu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ketu-alapere">
+              Ketu-Alapere Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ayobo">
+              Ayobo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/eti-osa">
+              Eti Osa Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/meiran">
+              Meiran Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/agbado-ijaye">
+              Agbado Ijaye Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/akute">
+              Akute Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/lagos-mainland">
+              Lagos Mainland Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/alakuko">
+              Alakuko Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ikotun-egbe">
+              Ikotun Egbe Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/oyingbo">
+              Oyingbo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/oko-afo">
+              Oko-Afo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/palmgrove">
+              Palmgrove Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/magodo-gra-2">
+              Magodo GRA 2 Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ojuelegba">
+              Ojuelegba Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/amukoko">
+              Amukoko Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/kosofe">
+              Kosofe Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ilasamaja">
+              Ilasamaja Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/iba"> Iba Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/fagba">
+              Fagba Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ijede">
+              Ijede Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/oke-odo">
+              Oke Odo Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ago"> Ago Hotels, </a>
+            <a href="https://hotels.ng/hotels-in-lagos/iganmu">
+              Iganmu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/orile-agege">
+              Orile Agege Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/akoka">
+              Akoka Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/arida-ikotu">
+              Arida Ikotu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/alaba-oro">
+              Alaba Oro Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/isashi">
+              Isashi Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/owutu">
+              owutu Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/agboju">
+              Agboju Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/lekki-ajah">
+              Lekki-Ajah Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ijaye">
+              Ijaye Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/aguda">
+              Aguda Hotels,
+            </a>
+            <a href="https://hotels.ng/hotels-in-lagos/ilogbo-eremi">
+              Ilogbo Eremi Hotels,
+            </a>
+          </p>
+        </div>
+        <footer>
+          <!-- Get app start -->
+          <section class="get-app-section">
+            <div class="get-app-phone-icon">
+              <img src="./assets/images/get-app-image-min.jpg" alt="" />
+            </div>
+            <div class="get-app-details">
+              <h2>Get the App</h2>
+              <h3>hotels.ng</h3>
+              <p>Book your hotel instantly with our Android App.</p>
+              <img src="./assets/images/google-play-min.png" alt="" />
+            </div>
+          </section>
+
+          <section class="unlock-deal-section">
+            <div class="unlock-deal">
+              <div class="column-first flex">
+                <div class="icon-unlock">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div class="unlock-deal-column-first-text">
+                  <h3>Enter your email address to unlock hotel deals</h3>
+                  <p>Sign up to start receiving secret exclusive offers</p>
+                </div>
+              </div>
+              <div class="column-second flex">
+                <form class="column-form">
+                  <input
+                    type="email"
+                    class=""
+                    name="email_subscribe"
+                    id="email_subscribe_footer"
+                    placeholder="Enter your email address"
+                    aria-label="Email Address"
+                  />
+                  <input
+                    type="button"
+                    class=""
+                    data-ga-label="email-form"
+                    data-ga-category="Listing-Page-Interaction"
+                    data-ga-action="button-click"
+                    onclick="subscribe(this, 'Hotel Listing', '_footer');"
+                    value="Unlock"
+                  />
+                </form>
+              </div>
+            </div>
+          </section>
+          <!-- Get app End -->
+
+          <!-- detail Summary start -->
+          <section class="foot-container">
+            <div class="company same">
+              <p class="headers">Company</p>
+              <p><a target="_blank" href="#">Visa</a></p>
+              <p><a target="_blank" href="#">Blog</a></p>
+              <p><a href="#">About Us</a></p>
+              <p><a target="_blank" href="#">Press Page</a></p>
+              <p><a target="_blank" href="#">Job Openings</a></p>
+              <p><a href="#">Privacy Policy</a></p>
+              <p><a href="#">Terms of Service</a></p>
+              <p><a href="#">How It Works</a></p>
+            </div>
+
+            <div class="community same">
+              <p class="headers">Community</p>
+              <p><a target="_blank" href="#">Twitter</a></p>
+              <p><a target="_blank" href="#">Facebook</a></p>
+              <p><a target="_blank" href="#">Instagram</a></p>
+              <p><a target="_blank" href="#">Travel Blog</a></p>
+              <p><a target="_blank" href="#">Tourist Attractions</a></p>
+              <p><a target="_blank" href="#">Travel guide</a></p>
+              <p><a target="_blank" href="#">Top Hotels in Nigeria</a></p>
+              <p><a target="_blank" href="#">Top Places in Nigeria</a></p>
+              <p><a href="#" target="_blank">Cars in Nigeria</a></p>
+            </div>
+
+            <div class="key-cities same">
+              <p class="headers">Top Cities</p>
+              <p><a href="#" target="_blank">Hotels in Lagos</a></p>
+              <p><a href="#" target="_blank">Hotels in Calabar</a></p>
+              <p><a href="#" target="_blank">Hotels in Abuja</a></p>
+              <p><a href="#" target="_blank">Hotels in Ikoyi</a></p>
+              <p><a href="#" target="_blank">Hotels in Port Harcourt</a></p>
+              <p><a href="#" target="_blank">Hotels in Owerri</a></p>
+              <p><a href="#" target="_blank">Hotels in Maryland</a></p>
+              <p><a href="#" target="_blank">Hotels in Abia</a></p>
+              <p><a href="#" target="_blank">Hotels in Jos</a></p>
+            </div>
+
+            <div class="key-attractions same">
+              <p class="headers">Top Destination</p>
+              <p><a target="_blank" href="#"> Abuja</a></p>
+              <p><a target="_blank" href="#/"> Calabar</a></p>
+              <p><a target="_blank" href="#"> Lagos</a></p>
+              <p><a target="_blank" href="#"> Enugu</a></p>
+            </div>
+
+            <div class="key-hotels same">
+              <p class="headers">Top Hotels</p>
+              <p><a href="#">Hotel Ibis Lagos Ikeja</a></p>
+              <p><a href="#">Ibis Lagos Airport</a></p>
+              <p><a href="#">Beni Gold Hotel and Apartments</a></p>
+              <p><a href="#">Beni Apartments</a></p>
+              <p><a href="#">Beni Hotels</a></p>
+              <p><a href="#">Silver Grandeur Hotel</a></p>
+              <p><a href="#">Grand Ibro Hotel</a></p>
+              <p><a href="#">Choice Suites (Formerly Chantella Suites)</a></p>
+              <p><a href="#">Jeromes Garden and Suites</a></p>
+              <p><a href="#">Limeridge Hotel</a></p>
+            </div>
+          </section>
+
+          <section class="sub-footer">
+            <div class="sub-footer-container">
+              <div class="sub-footer-copyright bb">
+                <p>
+                  Copyright &copy; 2023 Hotel Booking Limited All Rights
+                  Reserved
+                </p>
+                <div class="footer-social-icons">
+                  <li>
+                    <a><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a> <i class="fab fa-instagram"></i></a>
+                  </li>
+                </div>
+              </div>
+
+              <div class="certify bb">
+                <p>Certified by:</p>
+                <li>
+                  <img
+                    src="./assets/images/NANTA_logo.fw_.png"
+                    alt="NANTA_logo"
+                    class="certify-img-one"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/NTDC-Logo.png"
+                    alt="NTDC-Logo"
+                    class="certify-img-two"
+                  />
+                </li>
+              </div>
+            </div>
+          </section>
+          <!-- detail summary end -->
+        </footer>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/slider.js"></script>
+</html>
